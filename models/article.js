@@ -4,7 +4,8 @@ var Schema = mongoose.Schema;
 var articleSchema = new Schema({
   title: String,
   date: Date,
-  ufl: String
+  url: String,
+  key: String
 });
 
 var Article = mongoose.model("Article", articleSchema);
